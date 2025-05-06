@@ -1,0 +1,628 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2%;
+    z-index: 10;
+    display: flex;
+    justify-content: end;
+    gap: 8%;
+    
+  }
+
+  .myName{
+    margin-right: 30%;
+    font-weight: bold;
+    color: rgb(255, 185, 88);
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  a:hover{
+    font-weight: bold;
+    transform: scale(1.10);
+    transition: 0.3s;
+}
+#btnContato{
+    margin-top: 8vh;
+    border-style: none;
+    height: 46px;
+    width: 260px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+.linkedin{
+    height: 7vh;
+}
+.insta{
+    height: 7vh;
+ 
+}
+.redes{
+    display: flex;
+    padding-top: 2%;
+}
+/* section */
+  section {
+    height: 100vh;
+    padding-top: 5rem;
+    display: flex;
+  }
+/* home */
+  #home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .home-right {
+    flex: 1;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+/* sistemaSol */
+  .sun {
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle, yellow, orange);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 40px yellow;
+    z-index: 5;
+  }
+
+  .orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px dashed rgba(255, 255, 255, 0.178);
+    border-radius: 50%;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  .planet {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+
+  .orbit.mercurio {
+    width: 80px;
+    height: 80px;
+    animation: rotate1 3s linear infinite;
+  }
+  .orbit.venus {
+    width: 120px;
+    height: 120px;
+    animation: rotate2 5s linear infinite;
+  }
+  .orbit.terra {
+    width: 160px;
+    height: 160px;
+    animation: rotate3 7s linear infinite;
+  }
+  .orbit.marte {
+    width: 200px;
+    height: 200px;
+    animation: rotate4 9s linear infinite;
+  }
+  .orbit.jupiter {
+    width: 260px;
+    height: 260px;
+    animation: rotate5 12s linear infinite;
+  }
+  .orbit.saturno {
+    width: 320px;
+    height: 320px;
+    animation: rotate6 14s linear infinite;
+  }
+  .orbit.urano {
+    width: 380px;
+    height: 380px;
+    animation: rotate7 16s linear infinite;
+  }
+  .orbit.netuno {
+    width: 440px;
+    height: 440px;
+    animation: rotate8 18s linear infinite;
+  }
+
+  .orbit.mercurio .planet { width: 6px; height: 6px; background: gray; }
+  .orbit.venus .planet { width: 8px; height: 8px; background: orange; }
+  .orbit.terra .planet { width: 9px; height: 9px; background: blue; }
+  .orbit.marte .planet { width: 7px; height: 7px; background: red; }
+  .orbit.jupiter .planet { width: 20px; height: 20px; background: orange; }
+  .orbit.saturno .planet { width: 18px; height: 18px; background: goldenrod; }
+  .orbit.urano .planet { width: 14px; height: 14px; background: lightblue; }
+  .orbit.netuno .planet { width: 13px; height: 13px; background: blueviolet; }
+
+  @keyframes rotate1 {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+  @keyframes rotate2 {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+  @keyframes rotate3 {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+  @keyframes rotate4 {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+  @keyframes rotate5 {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+  @keyframes rotate6 {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+  @keyframes rotate7 {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+  @keyframes rotate8 {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+
+  /* home */
+.home-left{
+    display: flow-root;
+    text-align: left;
+}
+.titulo{
+    text-align: left;
+}
+.subtitulo{
+    font-size: 45%;
+}
+/* sobreMim */
+
+.imgEu{
+    height: 80%;
+    margin: 7%;
+}
+.textoSobreMim{
+    padding-top: 5%;
+    padding-right: 30%;
+    text-align: justify;
+    font-size: 130%;
+}
+.textoSobreMim h2{
+    color: rgb(255, 185, 88);
+    margin-top: 3%;
+}
+.textoSobreMim h3{
+    color: rgb(255, 220, 171);
+}
+/* MeuPortfolio */
+
+.meusProjetos{
+    padding: 5%;
+    text-align: justify;
+    font-size: 130%; 
+}
+.meusProjetos h2{
+    color: rgb(255, 185, 88);   
+   
+
+}
+/* Filtro */
+#section2{
+    display: flow-root;
+}
+.filtro{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 60px;
+    
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: first baseline;
+    gap: 10px;
+    margin-top: 20px;
+}
+.gallery img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    display: none;
+}
+.gallery img.show {
+    display: block;
+}
+#filter{
+    text-align: center;
+    border-style: none;
+    height: 40px;
+    width: 260px;
+    background-color: rgb(255, 185, 88);    ;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 1%; 
+}
+.gallery img.hover {
+    transform: scale(5);
+    transition: transform 0.3s ease-in-out;
+    background-color: #fff;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+    background-color: #fff;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid #ddd;
+}
+
+
+/* certificados*/
+
+
+.gallery2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: 5%; 
+}
+
+.gallery-img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid #ddd;
+  transition: transform 0.2s;
+  display: block;
+}
+
+.galeriaCertificados{
+  padding: 5%;
+  text-align: center;
+}
+.aumentada{
+  transform: scale(1.5);
+  z-index: 10;
+  transition: transform 0.3s ease-in-out;
+  background-color: #fff;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+  background-color: #fff;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid #ddd;
+}
+#section3{
+  height: auto;
+}
+/* rodapé */
+.logo{
+  height: 150px;
+ 
+}
+.rodape{
+  display: flex;
+  padding: 1%;
+  font-size: 130%;
+  background-color: rgb(1, 14, 49);
+  /* height: 15vh; */
+  align-items: center;
+}
+
+
+
+neve-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+
+.neve {
+  position: absolute;
+  top: 350%; /* Começar um pouco mais acima */
+  /* Tamanho e opacidade base - serão variados por :nth-child */
+  font-size: 16px;
+  color: #fff;
+  opacity: 0.9; /* Um pouco mais opaco por padrão */
+  user-select: none;
+  /* Usar a mesma animação, mas com durações variadas */
+  animation: snowfall linear infinite;
+}
+.neve {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Garante que a neve fique atrás de todo o conteúdo */
+}
+
+/* Keyframes com movimento lateral um pouco maior */
+@keyframes snowfall {
+  0% {
+      transform: translateY(0vh) translateX(10px) rotate(0deg); /* Aumentei translateX inicial */
+      opacity: inherit; /* Usa a opacidade definida no :nth-child ou base */
+  }
+  50% {
+      /* Aumentei o desvio lateral no meio */
+      transform: translateY(50vh) translateX(-15px) rotate(180deg);
+  }
+  100% {
+      /* Termina um pouco mais abaixo e com desvio final */
+      transform: translateY(108vh) translateX(5px) rotate(360deg);
+      opacity: 0.3; /* Fade out final um pouco menos intenso */
+  }
+}
+
+
+/* === Variações Aprimoradas para cada Floco === */
+/* Pseudo-Parallax: Flocos mais rápidos (menor duration) são maiores/mais opacos */
+/* Flocos mais lentos (maior duration) são menores/menos opacos */
+
+
+/* Rápidos e Próximos (Exemplos) */
+.neve:nth-child(1) { left: 10%; animation-duration: 8s; animation-delay: -1s; font-size: 24px; opacity: 1; }
+.neve:nth-child(7) { left: 70%; animation-duration: 9s; animation-delay: -3s; font-size: 22px; opacity: 0.95; }
+.neve:nth-child(15) { left: 25%; animation-duration: 10s; animation-delay: -5s; font-size: 20px; opacity: 0.9; }
+.neve:nth-child(22) { left: 75%; animation-duration: 8.5s; animation-delay: -2s; font-size: 23px; opacity: 1; }
+
+
+/* Médios (Exemplos) */
+.neve:nth-child(2) { left: 20%; animation-duration: 12s; animation-delay: -4s; font-size: 18px; opacity: 0.85; }
+.neve:nth-child(5) { left: 50%; animation-duration: 14s; animation-delay: -7s; font-size: 17px; opacity: 0.8; }
+.neve:nth-child(11) { left: 85%; animation-duration: 13s; animation-delay: -6s; font-size: 19px; opacity: 0.9; }
+.neve:nth-child(18) { left: 40%; animation-duration: 15s; animation-delay: -8s; font-size: 16px; opacity: 0.85; }
+.neve:nth-child(20) { left: 60%; animation-duration: 11s; animation-delay: -0s; font-size: 20px; opacity: 0.9; }
+
+
+
+
+/* Lentos e Distantes (Exemplos) */
+.neve:nth-child(3) { left: 20%; animation-duration: 25s; animation-delay: -12s; font-size: 10px; opacity: 0.6; } /* Ponto menor */
+.neve:nth-child(4) { left: 35%; animation-duration: 22s; animation-delay: -15s; font-size: 14px; opacity: 0.7; }
+.neve:nth-child(9) { left: 80%; animation-duration: 20s; animation-delay: -10s; font-size: 15px; opacity: 0.75; }
+.neve:nth-child(13) { left: 3%; animation-duration: 23s; animation-delay: -18s; font-size: 12px; opacity: 0.65; }
+.neve:nth-child(16) { left: 45%; animation-duration: 26s; animation-delay: -20s; font-size: 9px; opacity: 0.55; } /* Ponto menor */
+.neve:nth-child(24) { left: 85%; animation-duration: 24s; animation-delay: -14s; font-size: 11px; opacity: 0.6; } /* Ponto menor */
+
+
+
+
+/* Preenchendo os restantes com variações intermediárias */
+.neve:nth-child(6) { left: 65%; animation-duration: 16s; animation-delay: -9s; font-size: 16px; opacity: 0.8; }
+.neve:nth-child(8) { left: 80%; animation-duration: 18s; animation-delay: -11s; font-size: 14px; opacity: 0.75; }
+.neve:nth-child(10) { left: 15%; animation-duration: 19s; animation-delay: -13s; font-size: 13px; opacity: 0.7; }
+.neve:nth-child(12) { left: 35%; animation-duration: 17s; animation-delay: -14s; font-size: 15px; opacity: 0.8; }
+.neve:nth-child(14) { left: 88%; animation-duration: 21s; animation-delay: -16s; font-size: 12px; opacity: 0.65; }
+.neve:nth-child(17) { left: 48%; animation-duration: 10s; animation-delay: -2s; font-size: 21px; opacity: 0.95; } /* Rápido */
+.neve:nth-child(19) { left: 78%; animation-duration: 23s; animation-delay: -19s; font-size: 11px; opacity: 0.6; } /* Lento */
+.neve:nth-child(21) { left: 58%; animation-duration: 12s; animation-delay: -5s; font-size: 19px; opacity: 0.9; } /* Médio-Rápido */
+.neve:nth-child(23) { left: 28%; animation-duration: 19s; animation-delay: -17s; font-size: 13px; opacity: 0.7; } /* Médio-Lento */
+
+@media (max-width: 768px) {
+ 
+  html, body {
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+}
+  body h1{
+    font-size: 35px;
+  }
+  .subtitulo{
+    font-size: 15px;
+  }
+  body h2{
+    font-size: 20px;
+  }
+  nav {
+    display: flex;
+    padding: 4% 2%;
+   
+  }
+
+  .myName {
+    margin-right: 0;
+    
+  }
+
+  nav a {
+   font-size: 12px;
+  }
+
+  section {
+    flex-direction: column;
+   
+  }
+
+  #home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+  .textoSobreMim {
+    padding: 5%;
+    font-size: 15px;
+  }
+
+  .meusProjetos{
+    padding: 5%;
+    font-size: 15px;
+  }
+
+  .imgEu {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    margin-left: 2.5%;
+  }
+
+  .gallery {
+    justify-content: center;
+  }
+
+  .gallery img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .gallery2 {
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .gallery-img {
+    width: 90%;
+    height: auto;
+  }
+
+  #btnContato, #filter {
+    width: 90%;
+   
+  }
+
+  .rodape {
+    display: flex;
+    text-align: justify;
+    font-size: 16px;
+    width: 100%;
+   margin: auto;
+  }
+
+  .logo {
+    height: 100px;
+  }
+  #section2{
+    margin-top: 280%;
+  }
+  #section1{
+    margin-top: 80%;
+  }
+  #home{
+    margin-top: 50%;
+  }
+  .neve {
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+    z-index: -1; /* Garante que a neve fique atrás de todo o conteúdo */
+  }
+  .orbit.mercurio .planet { width: 4px; height: 4px; background: gray; }
+  .orbit.venus .planet { width: 6px; height: 6px; background: orange; }
+  .orbit.terra .planet { width: 7px; height: 7px; background: blue; }
+  .orbit.marte .planet { width: 5px; height: 5px; background: red; }
+  .orbit.jupiter .planet { width: 18px; height: 18px; background: orange; }
+  .orbit.saturno .planet { width: 16px; height: 16px; background: goldenrod; }
+  .orbit.urano .planet { width: 12px; height: 12px; background: lightblue; }
+  .orbit.netuno .planet { width: 11px; height: 11px; background: blueviolet; }
+
+  .orbit.mercurio {
+    width: 48px;
+    height: 48px;
+    animation: rotate1 3s linear infinite;
+  }
+  .orbit.venus {
+    width: 72px;
+    height: 72px;
+    animation: rotate2 5s linear infinite;
+  }
+  .orbit.terra {
+    width: 96px;
+    height: 96px;
+    animation: rotate3 7s linear infinite;
+  }
+  .orbit.marte {
+    width: 120px;
+    height: 120px;
+    animation: rotate4 9s linear infinite;
+  }
+  .orbit.jupiter {
+    width: 156px;
+    height: 156px;
+    animation: rotate5 12s linear infinite;
+  }
+  .orbit.saturno {
+    width: 192px;
+    height: 192px;
+    animation: rotate6 14s linear infinite;
+  }
+  .orbit.urano {
+    width: 228px;
+    height: 228px;
+    animation: rotate7 16s linear infinite;
+  }
+  .orbit.netuno {
+    width: 264px;
+    height: 264px;
+    animation: rotate8 18s linear infinite;
+  }
+  
+}
+
+
